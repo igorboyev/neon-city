@@ -1,0 +1,39 @@
+@import "variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "bootswatch";
+
+
+.left-menu {
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 991.8px) {
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 45px;
+  }
+  @media (max-width: 576px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    padding-top: 20px;
+  }
+  @media (max-width: 575.8px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding-top: 20px;
+  }
+}
+
+.footer {
+  @media (max-width: 575.8px) {
+    flex-direction: column;
+  }
+}
